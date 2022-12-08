@@ -76,28 +76,28 @@ function modalV1() {
 
 //
 
-// const daysNow = document.getElementById("time-d");
-// const hoursNow = document.getElementById("time-h");
+const daysNow = document.getElementById("time-d");
+const hoursNow = document.getElementById("time-h");
 
-// const minutesNow = document.getElementById("time-p");
+const minutesNow = document.getElementById("time-p");
 
-// const secondsNow = document.getElementById("time-s");
+const secondsNow = document.getElementById("time-s");
 
-// const currentY = new Date().getFullYear();
-// const deadline = new Date(`December 30 ${currentY} 18:37:25`).getTime();
+const currentY = new Date().getFullYear();
+const deadline = new Date(`December 30 ${currentY} 18:37:25`).getTime();
 
-// function upFlash() {
-//     const currentTime = new Date();
-//     console.log(currentTime);
-//     const diff = deadline - currentTime;
-//     const d = Math.floor(diff / 1000 / 60 / 60 / 24);
-//     const h = Math.floor(diff / 1000 / 60 / 60) % 24;
-//     const m = Math.floor(diff / 1000 / 60 / 60) % 60;
-//     const s = Math.floor(diff / 1000) % 60;
+function upFlash() {
+    const currentTime = new Date();
+    console.log(currentTime);
+    const diff = deadline - currentTime;
+    const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+    const h = Math.floor(diff / 1000 / 60 / 60) % 24;
+    const m = Math.floor(diff / 1000 / 60 / 60) % 60;
+    const s = Math.floor(diff / 1000) % 60;
 
-//     document.getElementById("time-d").innerHTML = d;
-//     document.getElementById("time-h").innerHTML = h < 10 ? '0' + h : h;
-//     document.getElementById("time-p").innerHTML = m < 10 ? '0' + m : m;
-//     document.getElementById("time-s").innerHTML = s < 10 ? '0' + s : s;
-// }
-// setInterval(upFlash, 1000);
+    document.getElementById("time-d").innerHTML = d;
+    document.getElementById("time-h").innerHTML = h < 10 ? '0' + h : h;
+    document.getElementById("time-p").innerHTML = m < 10 ? '0' + m : m;
+    document.getElementById("time-s").innerHTML = s < 10 ? '0' + s : s;
+}
+setInterval(upFlash, 1000);

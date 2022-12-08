@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-main">
+        <div class="main">
+            <div class="btn-close">
+                <button>
+                    <a href="/index.html">
+                        <i class='bx bx-collapse-horizontal'></i></a>
+                </button>
+            </div>
+            <div class="main-title">
+                <div class="heading">
+                    <a href="/index.html">
+                        <i alt="dkasdkask" class='bx bx-left-arrow-alt'></i>
+                    </a>
+                    <h2>Đăng nhập bằng email</h2>
+                    <h3>Nhập email và mật khẩu tài khoản Tiki</h3>
+                </div>
+                <form action="" onsubmit="return logIn();">
+                    <div class="email-main">
+                        <input id="email" type="email" placeholder="abc@gmail.com"
+                            pattern="^[a-z0-9._%+-]{6}+@[gmail]+\.[com]{2,3}$">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="email-main">
+                        <input id="pass" type="password" placeholder="Mật Khẩu">
+                        <!-- <span class="cur" onclick="Toggle()">Hiện</span> -->
+                        <label for="pass">Password:</label>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" onclick="logIn()">Đăng nhập</button>
+                    </div>
+                </form>
+                <a href="/forgot_pass.html">
+                    <p class="forgot">Quên mật khẩu?</p>
+                </a>
+                <p class="nope">Chưa có tài khoản?
+                    <a href="/Register.html">
+                        <span>Tạo tài khoản</span>
+                    </a>
+                </p>
+            </div>
+            <div class="img-tiki">
+                <img src="/assets/img/undraw_remotely_2j6y.svg" alt="">
+                <div class="content">
+                    <h4>Giúp bạn mua sắm Max Thông Minh</h4>
+                    <span>Tránh bẫy khuyến mại ảo, hàng kém chất lượng khi mua sắm trên Tiki, Sendo, Shopee, Lazada,...
+                        Cài đặt chỉ với 3 giây</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/assets/js/data_check.js"></script> -->
+    <script src="/assets/js/register.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

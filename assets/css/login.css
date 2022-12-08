@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  /* display: flex;
+  justify-content: center; */
+}
+
+/*  */
+.mt-op {
+  margin-top: 4px;
+  opacity: 0;
+}
+.container-main {
+  display: flex;
+  width: 800px;
+  height: auto;
+  margin-top: 80px;
+}
+/* main */
+.main {
+  width: 100%;
+  background: rgb(248, 248, 248);
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  height: 500px;
+}
+/* click close */
+.btn-close button {
+  position: absolute;
+  right: -14px;
+  top: -19px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+.btn-close i {
+  font-size: 30px;
+}
+.btn-close button:hover,
+.heading i:hover,
+.nope a:hover span,
+.forgot:hover,
+.link-social a i:hover,
+.btn button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
+}
+.btn-close button:hover:active,
+.heading i:hover:active,
+.nope a:hover:active,
+.forgot:hover:active,
+.link-social a i:hover:active,
+.btn button:hover:active {
+  transform: scale(0.99);
+}
+
+/* title */
+.main-title {
+  width: 500px;
+  padding: 40px 45px 24px;
+  background: rgb(255, 255, 255);
+  border-radius: 20px 0px 0px 20px;
+}
+
+.heading {
+  margin: 20px 0px;
+}
+.heading i {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.heading i:hover {
+  cursor: pointer;
+}
+.heading h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(36, 36, 36);
+}
+.heading h3 {
+  font-size: 12px;
+  color: rgb(24, 24, 24);
+}
+/* heading content */
+.email-main {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+/*  */
+input#email {
+  margin-left: auto;
+  display: flex;
+}
+input {
+  font-size: 16px;
+  padding: 20px 0px;
+  height: 56px;
+  border: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  color: #000;
+  font-weight: 400;
+  -webkit-appearance: none;
+}
+.email-main label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+label {
+  font-size: 12.5px;
+  color: #000;
+  opacity: 0.8;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica,
+    Arial, sans-serif;
+}
+
+input:focus {
+  border-bottom: solid 1px rgb(255, 66, 78);
+  outline: 0;
+  box-shadow: 0 2px 6px -8px rgb(255, 66, 78);
+}
+.email-main input:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.email-main input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.email-main input#captchaString:not(:placeholder-shown) {
+  padding: 36px 0px 12px 0px;
+}
+.email-main input#captchaString:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+/* .email-main input:valid:not(:placeholder-shown) + label + .icon svg {
+  opacity: 1;
+}
+.email-main input:valid:not(:placeholder-shown) + label + .icon svg path {
+  fill: #b69de6;
+} */
+
+.email-main input:not(:valid):not(:focus) + label + .icon {
+  animation-name: shake-shake;
+  animation-duration: 0.3s;
+}
+@keyframes shake-shake {
+  0% {
+    transform: translateX(-3px);
+  }
+
+  20% {
+    transform: translateX(3px);
+  }
+
+  40% {
+    transform: translateX(-3px);
+  }
+
+  60% {
+    transform: translateX(3px);
+  }
+
+  80% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.email-main {
+  position: relative;
+}
+/*  */
+.email-main input {
+  width: 100%;
+  /* padding: 10px 0px;
+  border: none;
+  font-size: 14px;
+  color: rgb(36, 36, 36);
+  outline: none; */
+}
+
+.email-main span {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 2;
+  color: rgb(13, 92, 182);
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* .email-main::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+} */
+
+/* click dang nhap */
+.btn button {
+  /* margin: 26px 0px 10px;
+  outline: none;
+  border-radius: 4px;
+  background: ;
+  padding: 13px 0px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 20px;
+  */
+  -webkit-appearance: none;
+  width: auto;
+  min-width: 100px;
+  border-radius: 24px;
+  text-align: center;
+  padding: 15px 40px;
+  margin-top: 5px;
+  background-color: rgb(255, 66, 78);
+  color: #fff;
+  font-size: 14px;
+  margin-left: auto;
+  font-weight: 500;
+  box-shadow: 0px 2px 6px -1px rgb(0 0 0 / 13%);
+  border: none;
+  transition: all 0.3s ease;
+  outline: 0;
+  cursor: pointer;
+}
+.forgot {
+  color: rgb(13, 92, 182);
+  font-size: 13px;
+  margin: 20px 0px 0px;
+  cursor: pointer;
+  display: inline-block;
+}
+.nope {
+  font-size: 13px;
+  color: #181818;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.nope span {
+  color: rgb(13, 92, 182);
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*  */
+
+.img-tiki {
+  background: linear-gradient(
+    136deg,
+    rgb(240, 248, 255) -1%,
+    rgb(219, 238, 255) 85%
+  );
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 23px;
+}
+.img-tiki img {
+  width: 70%;
+}
+.img-tiki {
+  width: 300px;
+}
+.content {
+  margin-top: 30px;
+  text-align: center;
+}
+.content h4 {
+  margin: 0px 0px 5px;
+  color: rgb(11, 116, 229);
+  font-size: 17px;
+}
+.content span {
+  font-size: 13px;
+  color: rgb(11, 116, 229);
+  white-space: pre-line;
+}
+.break-bot {
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 20px;
+}
+.link-social {
+  display: flex;
+  margin-top: 20px;
+  font-size: 40px;
+  justify-content: space-around;
+}
+.h-8 {
+  height: 800px;
+}
+.blue {
+  color: #37517e;
+}
+.green {
+  color: aquamarine;
+}
+
+.dBlack {
+  color: #9198e5;
+}
+.email-main button {
+  float: right;
+  top: 0;
+  bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+.cap-cha {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  font-size: 14px;
+  color: rgb(36, 36, 36);
+  outline: none;
+  margin-top: 4px;
+}
+.cur {
+  cursor: pointer;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <script type="text/javascript" src="/assets/js/data_check.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-main">
+        <div class="main h-8">
+            <div class="btn-close">
+                <button>
+                    <i class='bx bx-collapse-horizontal'></i>
+                </button>
+            </div>
+            <div class="main-title">
+                <div class="heading">
+                    <i class='bx bx-left-arrow-alt'></i>
+                    <h2>Bạn quên mật khẩu?</h2>
+                    <h3>Take it ez.....</h3>
+                </div>
+                <form action="" onsubmit="return forgot()">
+                    <div class="email-main">
+                        <input type="email" pattern="^[a-z0-9._%+-]{6}+@[\gmail]+\.[\com]{2,3}$" id="email" required
+                            placeholder="abc@gmail.com" value="">
+                    </div>
+                    <div class="email-main">
+                        <input type="password" pattern="^{5}$" id="pass" required placeholder="Mật khẩu" value="">
+                        <!-- <span>Hiện</span> -->
+                    </div>
+                    <div class="email-main">
+                        <input type="password" pattern="^{5}$" id="repass" required placeholder="Nhập lại mật khẩu"
+                            value="">
+                        <!-- <span>Hiện</span> -->
+                    </div>
+                    <div class="btn">
+                        <button target="_blank" type="submit" onclick="forgot()">Đăng nhập</button>
+                    </div>
+                </form>
+                <div id="break" class="break-bot" style="border-bottom: none;">
+                </div>
+                <div class="link-social">
+                    <a href=""><i class='dBlack bx bxl-github'></i></a>
+                    <a href=""><i class='blue bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='green bx bxl-google'></i></a>
+                </div>
+                <!-- <p class="forgot">Quên mật khẩu?</p> -->
+                <p class="nope">Bạn đã có tài khoản?
+                    <a href="/login.html"><span>Đăng nhập!!!</span></a>
+                </p>
+            </div>
+            <div class="img-tiki">
+                <img src="/assets/img/undraw_remotely_2j6y.svg" alt="">
+                <div class="content">
+                    <h4>Giúp bạn mua sắm Max Thông Minh</h4>
+                    <span>Tránh bẫy khuyến mại ảo, hàng kém chất lượng khi mua sắm trên Tiki, Sendo, Shopee, Lazada,...
+                        Cài đặt chỉ với 3 giây</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/register.js"></script>
+</body>
+
+</html>

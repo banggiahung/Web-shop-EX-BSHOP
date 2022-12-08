@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style_market.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="shortcut icon" href="/assets/img/your-logo (4).png" type="image/x-icon">
+
+
+    <title>Chart-EX-BShop</title>
+    <style>
+        .mt-10 {
+            margin-top: 120px;
+        }
+
+        .chart-name span {
+            font-weight: 600;
+        }
+
+        .green-price {
+            color: #27AE60;
+            font-weight: 600;
+        }
+
+        .red-price {
+            color: #EB5757;
+            font-weight: 600;
+        }
+
+        .ml-16 {
+            margin-left: 16px;
+        }
+
+        .mt-20 {
+            margin-top: 50%;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="market-chart-iframe-view">
+            <div class="chart-header mb-4 ">
+                <h3 class="chart-name">Giá hiện tại: <span>1.200.000 ₫</span></h3>
+                <div class="select-data">
+                    <span>Thấp nhất: <span class="green-price">1.200.000 ₫</span></span>
+                    <span class="ml-16"> Cao nhất: <span class="red-price">4.500.000 ₫</span> </span>
+                </div>
+            </div>
+            <div class="data data-his">
+                <div class="allow">
+                    <div class="for-me">
+                        <div class="data-us">
+                            <div class="ex-b">
+                                <div class="header">
+                                    <div class="title">Thông báo cho tôi...</div>
+                                    <div class="text">Khi giá sản phẩm giảm thấp hơn:</div>
+
+                                </div>
+                                <div class="content">
+                                    <div class="input-price-number ant-input-number">
+                                        <input type="email" placeholder="Nhâp email">
+                                    </div>
+                                    <span class="letter-allow">Theo dõi ngay</span>
+
+                                </div>
+                                <div class="copy-right">
+                                    Cung cấp bởi <a href="#">EX-BSHOP</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <iframe src="/Chart-price/chart-2.html" frameborder="0" width="100%" height="950px"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

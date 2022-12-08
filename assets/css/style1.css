@@ -1,0 +1,234 @@
+.max-w {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.max-w a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  aspect-ratio: 1/1;
+  width: 20%;
+  flex-grow: 1;
+}
+
+.max-w img {
+  height: 100%;
+  position: absolute;
+  /* width: 100%; */
+  z-index: 1;
+  object-fit: cover;
+}
+
+.max-w p {
+  position: absolute;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 87%;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/*  */
+.tray-cate {
+  width: 100%;
+  --item-height: 288px;
+  --extra-height: 70px;
+  height: calc(var(--item-height));
+}
+
+.tray-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  /* width: fit-content; */
+}
+.tray-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tray-items a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  border-width: 1px;
+  height: 9rem;
+  width: 8rem;
+  border-color: rgba(243, 244, 246);
+  opacity: 1;
+  color: inherit;
+  text-decoration: inherit;
+}
+.boder {
+  border: 0px solid rgba(243, 244, 246);
+}
+.tray-items img {
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  width: 6rem;
+  z-index: 1;
+}
+.tray-items p {
+  position: absolute;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  z-index: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+/*  */
+.collection-item {
+  width: 100%;
+  height: 100%;
+  max-height: 14rem;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  opacity: 1;
+  background-color: rgba(243, 244, 246);
+  padding: 2px;
+}
+.item-1-collection-wrap {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 4px;
+}
+.item-1-collection-wrap img {
+  object-fit: cover;
+}
+.first-title-collection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 14px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.last-title-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.img-overlay-last {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.img-overlay-last p {
+  font-size: 14px;
+}
+.title-main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.h-6 {
+  height: 1.5rem !important;
+}
+.cur-poi {
+  cursor: pointer !important;
+}
+.title-main-img span {
+  text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: 100%;
+  font-weight: 600;
+}
+
+/*  */
+.product-items-main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-1 {
+  max-height: 66.67%;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.item-1 img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  /* height: auto; */
+}
+.big-flex {
+  min-height: 128px;
+  padding: 0.5rem;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+}
+.products-name {
+  flex-direction: row;
+  display: flex;
+}
+.title-prds p {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000;
+}
+.price-products {
+  margin-top: 0.125rem;
+
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.price-products p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba(239, 68, 68);
+}
+.price-products span {
+  text-decoration: underline;
+}

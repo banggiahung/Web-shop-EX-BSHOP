@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <script type="text/javascript" src="/assets/js/data_check.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-main">
+        <div class="main h-8">
+            <div class="btn-close">
+                <button>
+                    <i class='bx bx-collapse-horizontal'></i>
+                </button>
+            </div>
+            <div class="main-title">
+                <div class="heading">
+                    <i class='bx bx-left-arrow-alt'></i>
+                    <h2>Đăng kí bằng email</h2>
+                    <h3>Trở thành thành viên của chúng tôi!!</h3>
+                </div>
+                <form action="" onsubmit="return signUp()">
+                    <div class="email-main">
+                        <input type="email" id="email" required placeholder="abc@gmail.com" value="">
+                        <label for="email">Email:</label>
+
+                    </div>
+                    <div class="email-main">
+                        <input type="password" id="pass" required placeholder="Mật khẩu" value="">
+                        <label for="pass">Mật khẩu:</label>
+
+                        <!-- <span>Hiện</span> -->
+                    </div>
+                    <div class="email-main">
+                        <input type="password" id="repass" required placeholder="Nhập lại mật khẩu" value="">
+                        <label for="repass">Nhập lại mật khẩu:</label>
+
+                        <!-- <span>Hiện</span> -->
+                    </div>
+                    <div class="email-main">
+                        <input type="text" placeholder="" id="captchaString" style="display: none;">
+                        <label class="mt-op" for="captchaString">Mã Capcha:</label>
+
+                        <!-- <button type="button" onclick="captchaGenerate()">Lấy mã Capcha</button> -->
+                    </div>
+                    <button id="btn" type="button" onclick="captchaGenerate()">Lấy mã Capcha</button>
+
+                    <div class="cap-cha email-main">
+                        <input style="display: none;" required id="userString" type="text"
+                            placeholder="Nhập mã Capcha ở trên">
+                        <label for="userString">Nhập mã Capcha ở trên:</label>
+
+                    </div>
+                    <div class="btn">
+                        <button target="_blank" type="submit" onclick="validate()">Đăng kí</button>
+                    </div>
+                </form>
+                <div id="break" class="break-bot" style="border-bottom: none;">
+                </div>
+                <div class="link-social">
+                    <a href=""><i class='dBlack bx bxl-github'></i></a>
+                    <a href=""><i class='blue bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='green bx bxl-google'></i></a>
+                </div>
+                <a href="/Login/forgot_pass.html">
+                    <p class="forgot">Quên mật khẩu?</p>
+                </a>
+
+                <p class="nope">Bạn đã có tài khoản?
+                    <a href="/Login/login.html"><span>Đăng nhập!!!</span></a>
+                </p>
+            </div>
+            <div class="img-tiki">
+                <img src="/assets/img/undraw_remotely_2j6y.svg" alt="">
+                <div class="content">
+                    <h4>Giúp bạn mua sắm Max Thông Minh</h4>
+                    <span>Tránh bẫy khuyến mại ảo, hàng kém chất lượng khi mua sắm trên Tiki, Sendo, Shopee, Lazada,...
+                        Cài đặt chỉ với 3 giây</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/register.js"></script>
+</body>
+
+</html>
